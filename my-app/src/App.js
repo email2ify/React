@@ -10,11 +10,14 @@ import ConditionalRenderingFunctional from './components/ConditionalRenderingFun
 import NestingComponents from './components/NestingComponents';
 import MethodsAsPropsParent from './components/MethodsAsPropsParent';
 import MethodsAsPropsChild from './components/MethodsAsPropsChild';
+import NavBarForm from './components/NavBarForm';
 
 
 function App() {
   return (
+//  <div className={css.App}>
     <div className="App">
+      <NavBarForm />
       <MethodsAsPropsChild />
       <MethodsAsPropsParent/>
       <NestingComponents />
