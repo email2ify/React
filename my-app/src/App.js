@@ -13,12 +13,17 @@ import MethodsAsPropsChild from './components/MethodsAsPropsChild';
 import NavBarForm from './components/NavBarForm';
 import RenderingLists from "./components/RenderingLists";
 import Clock from './components/Clock';
-
+import ControlledForm from './components/ControlledForm copy';
+import UncontrolledForm from './components/UncontrolledForm';
+import SearchBar from './components/SearchBar';
 
 function App() {
   return (
 //  <div className={css.App}>
     <div className="App">
+      <SearchBar />
+      <UncontrolledForm />  
+      <ControlledForm />
       <Clock />
       <RenderingLists />
       <NavBarForm />
