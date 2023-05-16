@@ -16,15 +16,26 @@ import Clock from './components/Clock';
 import ControlledForm from './components/ControlledForm copy';
 import UncontrolledForm from './components/UncontrolledForm';
 import SearchBar from './components/SearchBar';
+import HooksCounter from './components/HooksCounterIncremental';
+import ControlledFormHooks from './components/ControlledFormHooks';
+import UseStateWithArrays from './components/UseStateWithArrays';
+import UseEffectCounter from './components/UseEffectCounter';
+import HTTPGet from './components/HTTPGet';
+import HTTPPost from './components/HTTPPost';
+import HTTPHooks from './components/HTTPHooks';
+
+
 
 function App() {
   return (
 //  <div className={css.App}>
     <div className="App">
+      <Clock />
+      <UseStateWithArrays />
       <SearchBar />
+      <ControlledFormHooks />
       <UncontrolledForm />  
       <ControlledForm />
-      <Clock />
       <RenderingLists />
       <NavBarForm />
       <MethodsAsPropsChild />
@@ -32,12 +43,16 @@ function App() {
       <NestingComponents />
       <ConditionalRenderingClass />
       <ConditionalRenderingFunctional connected={false} />
+      <UseEffectCounter />
       <EventBinding />
       <EventClass />
+      <HooksCounter />
       <EventFunctional />
       <StatefulGreetingIncremental greeting=""/>
       <FunctionalGreetingWithProps name="Mike" message="I see you're" age="32 years old," greeting="Nice to meet you!!"/>
-
+      <HTTPGet />
+      <HTTPPost />
+      <HTTPHooks />
     </div>
   );
 }

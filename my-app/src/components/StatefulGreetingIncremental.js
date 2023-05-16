@@ -16,7 +16,7 @@ class StatefulGreetingWithPrevState extends React.Component {
       console.log("Previous Props:", prevProps);
       return {
         introduction:
-          prevState.introduction === "Hello!" ? "Goodbye!" : "Hello!",
+          prevState.introduction === "Hello!" ? "Goodbye!" : "Hello!,I'm a functional greeting with Class",
         buttonText: prevState.buttonText === "Exit" ? "Enter" : "Exit",
       };
     });
